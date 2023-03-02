@@ -1,0 +1,476 @@
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+
+a {
+   color: inherit;
+   text-decoration: none;
+}
+
+img {
+   max-width: 100%;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body {
+   /* min-width: 300px; */
+   font-family: 'Roboto', sans-serif;
+   font-weight: 400;
+   margin: 0 auto;
+}
+
+/* glob */
+
+:root {
+   --gap: 30px;
+}
+
+.btn-resert {
+   padding: 0;
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+}
+
+.flex {
+   display: flex;
+}
+
+.container {
+   padding: 0 136px 0 153px;
+   max-width: 1400px;
+}
+
+.title {
+   margin: 0;
+   margin-bottom: var(--gap);
+   padding-top: 80px;
+   font-weight: 700;
+   font-size: 38px;
+   line-height: 100%;
+}
+
+.descr {
+   margin: 0;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 140%;
+}
+
+
+/* header */
+
+.burger {
+   display: none;
+}
+
+.header {
+   padding: 24px;
+   background-color: #3F2AFF;
+}
+
+.header__img {
+  max-width: 94px;
+  max-height: 21px;
+}
+
+.header__nav {
+   padding-left: 0;
+}
+
+.header__link {
+   padding-bottom: 10px;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 21px;
+   color: #fff;
+}
+
+.hvr-underline-from-center:before {
+   height: 3px;
+   background: #fff;
+}
+
+.prev__right {
+   background-image: url('../img/prev/Group\ 95.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+
+/* prev */
+
+.prev {
+   background-image: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+   /* background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain; */
+}
+
+/* .prev__row {
+   justify-content: space-between;
+} */
+
+.prev__title {
+   padding-top: 130px;
+   margin: 0;
+   margin-bottom: var(--gap);
+   font-weight: 700;
+   font-size: 57px;
+   line-height: 108%;
+   color: #fff;
+}
+
+.prev__descr {
+   margin-bottom: 62px;
+   color: #fff;
+   font-size: 18.5px;
+}
+
+.prev__btn {
+   margin-bottom: 130px;
+   padding: 24px 60px;
+   background: #3F2AFF;
+   border-radius: 20px;
+   color: #fff;
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 21px;
+   transition: background .3s ease-in-out;
+}
+
+.prev__btn:hover {
+   background: #4864e2;
+}
+
+.prev__right {
+   padding: 0;
+   margin-top: 15px;
+   margin-bottom: 12px;
+}
+
+/* adv */
+
+.advantages__top {
+   /* margin-bottom: 52px; */
+}
+
+/* .advantages__container{
+   background-color: grey;
+}
+.advantages__top-img {
+   width: 160px;
+   height: 142px;
+   background-image: url('../img/adv/1.png');
+   background-position: left;
+   background-repeat: no-repeat;
+   background-size: contain;
+} */
+
+.advantages__top-text {
+   margin-bottom: 24px;
+   align-items: start;
+   padding-left: 203px;
+   /* outline: 2px solid red; */
+   background-image: url('../img/advantages/Vectary\ texture.png');
+   background-position: 2% 77%;
+   background-repeat: no-repeat;
+   background-size: 160px 142px;
+}
+
+.advantages__top-title {
+   margin-bottom: 22px;
+   color: #2E2B44;
+}
+
+.advantages__top-descr {
+   color: #666;
+   font-size: 15.5px;
+   line-height: 150%;
+}
+
+.advantages__btm-descr {
+   padding-left: 123px;
+   padding-top: 12px;
+   padding-bottom: 10px;
+   background-position: 5%;
+   background-repeat: no-repeat;
+   background-size: 80px 80px;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 120%;
+   display: flex;
+   align-items: center;
+   color: #666666;
+   /* outline: 2px solid red; */
+}
+
+.advantages__btm-descr-1 {
+   background-image: url('../img/advantages/eye-circle.png');
+}
+
+.advantages__btm-descr-2 {
+   background-image: url('../img/advantages/fingers.png');
+}
+
+.advantages__btm-descr-3 {
+   background-image: url('../img/advantages/voice-circle.png');
+}
+
+.advantages__btm {
+   margin-bottom: 65px;
+}
+/* не удаётся подключить картинки из папки adv, хотя из других папок подключаются. Также этой папки нет в девтулс в "источниках", хотя в vsc папки подключены, всё нормально отображается.
+
+Ещё не удалось выровнять карточки по единой высоте в блоке "курсы"*/
+
+
+/* teachers */
+
+.teachers {
+   background-color: #212133;
+}
+
+.teachers__card {
+   margin-bottom: 75px;
+}
+
+/* .teachers__card-card {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+} */
+
+.teachers__title {
+   margin-bottom: 25px;
+   padding-top: 76px;
+   color: #fff;
+}
+
+.teachers__card-img {
+   margin-bottom: 23px;
+   border-radius: 23px 23px 0px 0px;
+   width: 100%;
+}
+
+.teachers__card-name {
+   display: block;
+   margin-bottom: 4px;
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 150%;
+   color: #fff;
+}
+
+.teachers__card-descr {
+   font-size: 16.9px;
+   line-height: 143%;
+   color: #85859B;
+}
+
+/* courses */
+
+.courses {
+   margin-bottom: 80px;
+}
+
+.courses__row {
+   align-items: stretch;
+}
+
+.courses__title {
+   margin-bottom: 23px;
+   padding-top: 76px;
+   font-size: 38px;
+}
+
+.courses__card {
+   /* min-height: 512px; */
+}
+
+.courses__img {
+   width: 100%;
+   text-align: center;
+}
+
+.courses__img img {
+   width: 100%;
+}
+
+.courses__card-btm {
+   margin-top: -8px;
+   padding: 35px 28px 32px 32px;
+   /* min-height: 300px; */
+   border-radius: 0 0 20px 20px;
+   background-color: #EDF0F9;
+   /* background-image: url('../img/courses/6.jpg');
+   background-position: 50% 0;
+   background-repeat: no-repeat;
+   background-size: 240px 180px; */
+}
+
+/* .courses__card-btm {
+   padding: 215px 20px 32px 32px;
+   height: 100%;
+   background-image: url('../img/courses/6.jpg');
+   background-position: 50% 0;
+   background-repeat: no-repeat;
+   background-size: contain;
+} */
+
+/* .courses__card-btm-1 {
+   background-image: url('../img/courses/1_1440.jpg');
+}
+
+.courses__card-btm-2 {
+   background-image: url('../img/courses/2_1440.jpg');
+}
+
+.courses__card-btm-3 {
+   background-image: url('../img/courses/3_1440.jpg');
+}
+
+.courses__card-btm-4 {
+   background-image: url('../img/courses/4_1440.jpg');
+} */
+
+
+/* подключить для каждого размера (ширины) свою картинку, то есть скачать 16 картинок */
+
+.courses {
+   /* margin-bottom: 15px; */
+}
+
+.courses__card {
+   position: relative;
+   
+}
+
+.courses__card:nth-child(1) {
+   margin-bottom: 5px;
+}
+
+.courses__hours {
+   padding-left: 27px;
+   position: absolute;
+   top: 3%;
+   right: 4%;
+   background-image: url('../img/courses/mdi_access_time.png');
+   background-position: left;
+   background-repeat: no-repeat;
+   background-size: 20px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+   color: #fff;
+}
+
+.courses__title-3 {
+   margin: 0;
+   margin-bottom: 9px;
+   font-weight: 700;
+   font-size: 17px;
+   line-height: 145%;
+   color: #212133
+}
+
+.courses__descr {
+   margin-bottom: 45px;
+   min-height: 98px;
+   color: #666;
+   font-size: 16.4px;
+   line-height: 150%;
+}
+
+.courses__btn {
+   padding: 20px 56px;
+   background: #3F2AFF;
+   border-radius: 20px;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 19px;
+   align-items: center;
+   color: #fff;
+   transition: background .3s ease-in-out;
+}
+
+
+
+.courses__btn:hover {
+   background: #4864e2;
+}
+
+/* footer */
+
+.footer {
+   background: #2E2B44;
+}
+
+.footer__soc-block {
+   padding: 26px 0;
+   text-align: center;
+}
+
+.footer__soc:not(:last-child) {
+   display: inline-block;
+   margin-right: 26px;
+}
+
+.footer__copy-block {
+   background-color: #fff;
+   text-align: center;
+}
+
+.footer__copy {
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 15px;
+   text-transform: uppercase;
+   color: #2E2B44
+}
+
+.footer__soc svg path {
+   fill: #fff;
+   transition: fill .3s ease-in;
+}
+
+.footer__soc svg:hover path {
+   fill: #4b6af7;
+}
+
+
+
+
+
+/* .adve__block-card {
+   padding-left: 190px;
+   background-image: url('../img/adv/Vectary\ texture.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+} */
+
+/* .adve__top {
+   padding-left: 190px;
+   background-image: url('../img/adv/Vectary\ texture.jpg');
+   background-position: left;
+   background-repeat: no-repeat;
+   background-size: contain;
+} */
+
+/* .adve__bottom-descr {
+   padding-left: 110px;
+   background-image: url('../img/adv/eye-circle.png');
+   background-position: left;
+   background-repeat: no-repeat;
+   background-size: contain;
+} */
