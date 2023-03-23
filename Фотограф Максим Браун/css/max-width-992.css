@@ -1,0 +1,66 @@
+@media (max-width: 992px) {
+   
+   .container {
+      padding: 0 40px;
+   }
+    
+   .burger {
+      margin-right: 50px;
+   }
+
+   .header__name {
+      font-size: 30px;
+   }
+
+   .header__title {
+      font-size: 50px;
+   }
+
+   .header__title-span {
+      margin-right: -20px;
+      font-size: 30px;
+   }
+
+   .about__descr {
+      margin-bottom: 79px;
+      padding-top: 70px;
+   }
+   
+
+   .about__stat {
+      margin-bottom: 90px;
+   }
+
+   .title-2 {
+      margin-bottom: 52px;
+   }
+
+   .portfolio__block {
+      margin-bottom: 90px;
+   }
+
+   .rev__descr {
+      font-size: 14px;
+   }
+
+   .cost__row {
+      grid-template-columns: repeat(2, minmax(230px, 1fr));
+   }
+
+   .cost__card {
+      margin-bottom: 0;
+   }
+
+   .cost__card:last-child, .cost__card:nth-child(3) {
+      margin-bottom: 50px;
+   }
+
+   .footer__text-name, .footer__text-conf {
+      margin-right: 0;
+   }
+
+   .footer__block {
+      justify-content: space-between;
+   }
+
+}

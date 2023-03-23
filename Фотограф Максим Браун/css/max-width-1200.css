@@ -1,0 +1,19 @@
+@media (max-width: 1200px) {
+
+   .container {
+      padding: 0 54px;
+   }
+
+   .header__name {
+      font-size: 35px;
+   }
+
+   .header__title {
+      font-size: 70px;
+   }
+
+   .cost {
+      background-position: 270%;
+   }
+
+}

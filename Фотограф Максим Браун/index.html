@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Фотограф Максим Браун</title>
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="fonts/stylesheet.css">
+   <link rel="stylesheet" href="css/hover.css">
+   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+   <!-- <link rel="stylesheet" href="css/max-width-1400.css">
+      <link rel="stylesheet" href="css/max-width-1200.css">
+      <link rel="stylesheet" href="css/max-width-992.css">
+      <link rel="stylesheet" href="css/max-width-768.css">
+      <link rel="stylesheet" href="css/max-width-576.css"> -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/media.css">
+   <link rel="icon" href="img/favicon/favicon.png" type="image/svg+xml">
+
+
+
+</head>
+
+<body>
+   <header class="header__wrapper">
+      <div class="header">
+         <div class="container header__container">
+            <div class="header__top flex">
+               <span class="header__burger burger">
+                  <span class="burger__line"></span>
+                  <span class="burger__line"></span>
+                  <span class="burger__line"></span>
+               </span>
+               <a class="header__logo" href="#">
+                  <img src="img/header/header-logo.png" alt="Фотограф Максим Браун">
+               </a>
+               <nav class="header__nav">
+                  <a href="#">Обо мне</a>
+                  <a href="#">Портфолио</a>
+                  <a href="#">Отзывы</a>
+                  <a href="#">Стоимость</a>
+               </nav>
+               <div class="header__soc flex">
+                  <a class="header__soc-link" href="#">
+                     <svg class="header__soc-img" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M16.8503 0H7.14973C3.20735 0 0 3.20735 0 7.14973V16.8503C0 20.7926 3.20735 24 7.14973 24H16.8503C20.7926 24 24 20.7926 24 16.8503V7.14973C24 3.20735 20.7926 0 16.8503 0ZM21.5856 16.8503C21.5856 19.4655 19.4655 21.5856 16.8503 21.5856H7.14973C4.5345 21.5856 2.4144 19.4655 2.4144 16.8503V7.14973C2.4144 4.53446 4.5345 2.4144 7.14973 2.4144H16.8503C19.4655 2.4144 21.5856 4.53446 21.5856 7.14973V16.8503Z"
+                           fill="#222222" />
+                        <path
+                           d="M12 5.79297C8.57729 5.79297 5.79272 8.57754 5.79272 12.0002C5.79272 15.4228 8.57729 18.2074 12 18.2074C15.4227 18.2074 18.2072 15.4229 18.2072 12.0002C18.2072 8.57749 15.4227 5.79297 12 5.79297ZM12 15.7931C9.90523 15.7931 8.20712 14.095 8.20712 12.0002C8.20712 9.90547 9.90527 8.20737 12 8.20737C14.0947 8.20737 15.7928 9.90547 15.7928 12.0002C15.7928 14.0949 14.0947 15.7931 12 15.7931Z"
+                           fill="#222222" />
+                        <path
+                           d="M18.2193 7.32683C19.0408 7.32683 19.7067 6.6609 19.7067 5.83944C19.7067 5.01798 19.0408 4.35205 18.2193 4.35205C17.3979 4.35205 16.7319 5.01798 16.7319 5.83944C16.7319 6.6609 17.3979 7.32683 18.2193 7.32683Z"
+                           fill="#222222" />
+                     </svg>
+                  </a>
+                  <a class="header__soc-link" href="#">
+                     <svg class="header__soc-img" width="24" height="16" viewBox="0 0 24 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                           d="M23.4493 1.77512C23.6161 1.21306 23.4493 0.800049 22.6553 0.800049H20.0297C19.3621 0.800049 19.0543 1.15683 18.8874 1.55025C18.8874 1.55025 17.5521 4.83829 15.6606 6.97409C15.0487 7.59233 14.7705 7.78904 14.4367 7.78904C14.2698 7.78904 14.0282 7.59233 14.0282 7.03031V1.77512C14.0282 1.10065 13.8345 0.800049 13.2781 0.800049H9.15213C8.73494 0.800049 8.48403 1.11309 8.48403 1.40977C8.48403 2.04916 9.42974 2.19661 9.52722 3.99522V7.9015C9.52722 8.75794 9.37413 8.91322 9.04032 8.91322C8.15023 8.91322 5.98507 5.61049 4.70093 1.83131C4.44927 1.09676 4.19686 0.800049 3.52583 0.800049H0.900217C0.150043 0.800049 0 1.15683 0 1.55025C0 2.25284 0.89014 5.73759 4.14464 10.3464C6.31429 13.4939 9.37118 15.2 12.1528 15.2C13.8218 15.2 14.0283 14.8211 14.0283 14.1684V11.7895C14.0283 11.0316 14.1864 10.8804 14.7149 10.8804C15.1043 10.8804 15.7719 11.0771 17.3296 12.5946C19.1099 14.3932 19.4034 15.2 20.4047 15.2H23.0304C23.7805 15.2 24.1556 14.8211 23.9392 14.0733C23.7024 13.3279 22.8525 12.2466 21.7247 10.9647C21.1127 10.234 20.1947 9.44717 19.9165 9.05365C19.5271 8.54787 19.6384 8.32299 19.9165 7.87339C19.9165 7.87339 23.1155 3.32074 23.4493 1.77512Z"
+                           fill="#222222" />
+                     </svg>
+                  </a>
+                  <a class="header__soc-link" href="#">
+                     <svg class="header__soc-img" width="24" height="22" viewBox="0 0 24 22" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M23.5468 0.496888C23.1374 0.153447 22.4944 0.104307 21.8295 0.368368H21.8285C21.1292 0.645929 2.03537 8.74811 1.25808 9.07913C1.11671 9.12773 -0.118008 9.5835 0.00917513 10.5987C0.122712 11.514 1.11507 11.8931 1.23625 11.9368L6.09049 13.5811C6.41255 14.6417 7.59977 18.5545 7.86233 19.3905C8.02608 19.9116 8.293 20.5963 8.7608 20.7372C9.17128 20.8938 9.57957 20.7507 9.84376 20.5455L12.8116 17.8223L17.6025 21.5186L17.7166 21.5861C18.0419 21.7287 18.3536 21.8 18.6511 21.8C18.8809 21.8 19.1014 21.7573 19.3121 21.672C20.0299 21.3804 20.317 20.7038 20.347 20.6271L23.9256 2.22543C24.144 1.24263 23.8405 0.742589 23.5468 0.496888ZM10.3716 14.2388L8.73405 18.5589L7.0965 13.1588L19.6511 3.97882L10.3716 14.2388Z"
+                           fill="#222222" />
+                     </svg>
+                  </a>
+               </div>
+            </div>
+            <p class="header__name">
+               максим браун
+            </p>
+            <h1 class="header__title">
+               фотограф <br> <span class="header__title-span">в</span> москве
+            </h1>
+            <p class="header__descr">Нестандартные фотографии, которые помогут вам выделиться из толпы</p>
+            <button class="header__btn btn-resert">Записаться</button>
+         </div>
+      </div>
+      <div class="header__foto-block">
+         <img src="img/header/header-main-photo.jpg" alt="Максим Браун">
+      </div>
+   </header>
+
+   <main class="main">
+      <section class="about">
+         <div class="container container__about">
+            <div class="about__descr-wrap">
+               <p class="about__descr">Услуги профессионального фотографа, привлечение к&nbsp;съемкам лучших
+                  специалистов.
+                  Решение творческих и&nbsp;организационных задач любой сложности. Создание рекламных фотографий
+                  и&nbsp;выразительных портретов. Профессиональная работа в&nbsp;студии и&nbsp;на&nbsp;выезде.</p>
+            </div>
+            <img class="about__foto" src="img/about/about-photo.jpg" alt="фото">
+            <div class="about__wrapper">
+               <div class="about__stat row g-sm-5 g-4">
+                  <div class="about__stat-block col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-xs-6 col-6">
+                     <span class="about__stat-number">
+                        9
+                     </span>
+                     <p class="about__stat-descr">
+                        лет опыта фотографии
+                     </p>
+                  </div>
+                  <div class="about__stat-block col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-xs-6 col-6">
+                     <span class="about__stat-number">
+                        100+
+                     </span>
+                     <p class="about__stat-descr">
+                        портретных съемок
+                     </p>
+                  </div>
+                  <div class="about__stat-block col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-xs-6 col-6">
+                     <span class="about__stat-number">
+                        12
+                     </span>
+                     <p class="about__stat-descr">
+                        публикаций в журналах
+                     </p>
+                  </div>
+                  <div class="about__stat-block col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-xs-6 col-6">
+                     <span class="about__stat-number">
+                        25
+                     </span>
+                     <p class="about__stat-descr">
+                        съемок знаменитостей
+                     </p>
+                  </div>
+                  <div class="about__stat-block col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-xs-6 col-6">
+                     <span class="about__stat-number">
+                        14
+                     </span>
+                     <p class="about__stat-descr">
+                        рекламных компаний
+                     </p>
+                  </div>
+                  <div class="about__stat-block col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-4 col-xs-6 col-6">
+                     <span class="about__stat-number">
+                        5
+                     </span>
+                     <p class="about__stat-descr">
+                        побед в конкурсах
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="portfolio">
+         <div class="container container__portfolio">
+            <h2 class="portfolio__title title-2">портфолио</h2>
+            <div class="portfolio__block">
+               <a class="portfolio__photo-link" href="#">
+                  <img class="portfolio__photo" src="img/portfolio/portfolio-1.jpg" alt="пример фотографии">
+               </a>
+               <a class="portfolio__photo-link" href="#">
+                  <img class="portfolio__photo" src="img/portfolio/portfolio-2.jpg" alt="пример фотографии">
+               </a>
+               <a class="portfolio__photo-link" href="#">
+                  <img class="portfolio__photo" src="img/portfolio/portfolio-3.jpg" alt="пример фотографии">
+               </a>
+               <a class="portfolio__photo-link" href="#">
+                  <img class="portfolio__photo" src="img/portfolio/portfolio-4.jpg" alt="пример фотографии">
+               </a>
+               <a class="portfolio__photo-link" href="#">
+                  <img class="portfolio__photo" src="img/portfolio/portfolio-5.jpg" alt="пример фотографии">
+               </a>
+               <a class="portfolio__photo-link" href="#">
+                  <img class="portfolio__photo" src="img/portfolio/portfolio-6.jpg" alt="пример фотографии">
+               </a>
+               <a class="portfolio__photo-link" href="#">
+                  <img class="portfolio__photo" src="img/portfolio/portfolio-7.jpg" alt="пример фотографии">
+               </a>
+               <a class="portfolio__photo-link" href="#">
+                  <img class="portfolio__photo" src="img/portfolio/portfolio-8.jpg" alt="пример фотографии">
+               </a>
+            </div>
+         </div>
+      </section>
+
+      <section class="rev">
+         <div class="container">
+            <h2 class="rev__title title-2">отзывы</h2>
+            <div class="rev__row g-5 g-md-4 gy-xxl-5 gy-md-4 row">
+               <article class="rev__card col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                  <div class="rev__card-top flex">
+                     <img class="rev__foto" src="img/rev/reviews-1.png" alt="Фото пользователя">
+                     <div class="rev__name-age">
+                        <span class="rev__name">Екатерина</span>
+                        <span class="rev__age">18 лет</span>
+                     </div>
+                  </div>
+                  <p class="rev__descr">
+                     Я&nbsp;очень очень довольна результатом! Безумна рада что испонилась еще одня моя маленькая
+                     мечта&#41;&#41;&#41; когда я&nbsp;первый раз увидела твои фото в&nbsp;facebook я&nbsp;даже
+                     не&nbsp;могла предположить что попаду в&nbsp;твой объектив
+                  </p>
+               </article>
+               <article class="rev__card col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                  <div class="rev__card-top flex">
+                     <img class="rev__foto" src="img/rev/reviews-2.png" alt="Фото пользователя">
+                     <div class="rev__name-age">
+                        <span class="rev__name">Кристина</span>
+                        <span class="rev__age">25 лет</span>
+                     </div>
+                  </div>
+                  <p class="rev__descr">
+                     Не&nbsp;просто хороший фотограф, но&nbsp;и&nbsp;прекрасный человек, фотографии получились
+                     совершенно необычные , он&nbsp;видит людей немного с&nbsp;другой стороны. Спасибо,
+                     за&nbsp;проведенное время, было очень весело и&nbsp;приятно с&nbsp;тобой пообщаться
+                  </p>
+               </article>
+               <article class="rev__card col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                  <div class="rev__card-top flex">
+                     <img class="rev__foto" src="img/rev/reviews-3.png" alt="Фото пользователя">
+                     <div class="rev__name-age">
+                        <span class="rev__name">Регина</span>
+                        <span class="rev__age">23 года</span>
+                     </div>
+                  </div>
+                  <p class="rev__descr">
+                     Встретившись, я&nbsp;была удивлена его подходом. Он&nbsp;пытается разговорить человека, понять его
+                     и&nbsp;раскрыть. Очень комфортный в&nbsp;общении, улавливает твое состояние и&nbsp;плавно,
+                     незаметно переходит к&nbsp;работе.
+                  </p>
+               </article>
+               <article class="rev__card col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                  <div class="rev__card-top flex">
+                     <img class="rev__foto" src="img/rev/reviews-4.png" alt="Фото пользователя">
+                     <div class="rev__name-age">
+                        <span class="rev__name">Мария</span>
+                        <span class="rev__age">26 лет</span>
+                     </div>
+                  </div>
+                  <p class="rev__descr">
+                     Большому кораблю, большое плавание! Максим, спасибо за&nbsp;незабываемую фотосессию, за&nbsp;твое
+                     видение и&nbsp;терпение. Спасибо, за&nbsp;то, что смог передать настроение и&nbsp;суть.
+                  </p>
+               </article>
+               <article class="rev__card col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                  <div class="rev__card-top flex">
+                     <img class="rev__foto" src="img/rev/reviews-5.png" alt="Фото пользователя">
+                     <div class="rev__name-age">
+                        <span class="rev__name">Александр</span>
+                        <span class="rev__age">30 лет</span>
+                     </div>
+                  </div>
+                  <p class="rev__descr">
+                     Фотосессия с&nbsp;Максимом была одной из&nbsp;лучших и&nbsp;незабываемых. Он&nbsp;умеет правильно
+                     воплотить характер человека в&nbsp;фотографии. Очень легко было работать!
+                  </p>
+               </article>
+               <article class="rev__card col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                  <div class="rev__card-top flex">
+                     <img class="rev__foto" src="img/rev/reviews-6.png" alt="Фото пользователя">
+                     <div class="rev__name-age">
+                        <span class="rev__name">Стефания</span>
+                        <span class="rev__age">19 лет</span>
+                     </div>
+                  </div>
+                  <p class="rev__descr">
+                     Ваш почерк для меня&nbsp;&mdash; это магия и&nbsp;мистика. Вы&nbsp;&mdash; гений. Гений места,
+                     гений изгибов и&nbsp;смыслов. Я&nbsp;счастлива, что ваш талант прикоснулся ко&nbsp;мне.
+                  </p>
+               </article>
+            </div>
+         </div>
+      </section>
+
+      <section class="cost__wrapper">
+         <div class="cost__foto-block">
+            <img src="img/cost/cost-bg.jpg" alt="">
+         </div>
+         <div class="cost">
+            <div class="container">
+               <h2 class="cost__title title-2">Стоимость</h2>
+               <p class="cost__descr">
+                  Стоимость может изменится из-за условий и&nbsp;пожеланий клиента. Для уточнения деталей
+                  и&nbsp;финальной
+                  стоимости свяжитесь со&nbsp;мной, уточнив в&nbsp;какие даты вам требуется съемка, а&nbsp;так&nbsp;же
+                  тип
+                  фотосъёмки.
+               </p>
+               <div class="cost__row ">
+                  <article class="cost__card flex">
+                     <img class="cost__card-img" src="img/cost/cost-logo-1.png" alt="Иконка">
+                     <div>
+                        <span class="cost__card-descr">
+                           Съемка портретов
+                        </span>
+                        <span class="cost__card-price">
+                           50 000 ₽
+                        </span>
+                     </div>
+                  </article>
+                  <article class="cost__card flex">
+                     <img class="cost__card-img" src="img/cost/cost-logo-2.png" alt="Иконка">
+                     <div>
+                        <span class="cost__card-descr">
+                           аренда студии
+                        </span>
+                        <span class="cost__card-price">
+                           1 000 ₽ <span class="cost__card-price-sp">/час</span>
+                        </span>
+                     </div>
+                  </article>
+                  <article class="cost__card flex">
+                     <img class="cost__card-img" src="img/cost/cost-logo-3.png" alt="Иконка">
+                     <div>
+                        <span class="cost__card-descr">
+                           Макияж, прическа
+                        </span>
+                        <span class="cost__card-price">
+                           5 000 ₽
+                        </span>
+                     </div>
+                  </article>
+                  <article class="cost__card flex">
+                     <img class="cost__card-img" src="img/cost/cost-logo-4.png" alt="Иконка">
+                     <div>
+                        <span class="cost__card-descr">
+                           аренда одежды
+                        </span>
+                        <span class="cost__card-price">
+                           10 000 ₽
+                        </span>
+                     </div>
+                  </article>
+               </div>
+            </div>
+         </div>
+      </section>
+
+   </main>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__block flex">
+            <span class="footer__text footer__text-name">
+               © Фотограф Максим Браун 2022
+            </span>
+            <a class="footer__text footer__text-conf" href="#">Политика конфиденциальности</a>
+            <a class="footer__text" href="#">Разработка и маркетинг WebCanape</a>
+         </div>
+      </div>
+   </footer>
+
+
+   <script src="script.js"></script>
+</body>
+
+</html>
